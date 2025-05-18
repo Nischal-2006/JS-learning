@@ -283,6 +283,16 @@
 //     }
 //     document.write("<br>")
 // }
+// for (let i=5;i>=1;i--){
+//     for (let j=1;j<=5-i;j++){
+//         document.write("&nbsp;&nbsp;")
+
+//     }
+//     for (let k=1;k<=2*i-1;k++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+// }
 
 
 //  for (let  i=5;i>=1;i--){
@@ -294,6 +304,67 @@
 //     }
 //     document.write("<br>"); 
 // }
+
+
+
+
+
+// .... Math In JS ......//
+// console.log(Math.PI);
+// console.log(Math.abs(-9))
+// console.log(Math.sqrt(4.3));
+// console.log(Math.pow(2,3)); 
+// console.log(Math.floor(4.3));   
+// console.log(Math.ceil(4.3));   
+// console.log(Math.round(4.3));
+// console.log(Math.random());
+// console.log(Math.max(2999,333,1,2,3,4,5,333,31,2,3,212,141,3123,223,1,1,134));
+// console.log(Math.min(2999,333,1,2,3,4,5,333,31,2,3,212,141,3123,223,1,1,134));
+
+// console.log(Math.min[2999,333,1,2,3,4,5,333,31,2,3,212,141,3123,223,1,1,134]);
+
+
+// let y=[1,2,3,4,5,6,7,8,9];
+
+// console.log(Math.max(...y))
+
+
+// let randomnum=Math.floor(Math.random()*y.length);
+// console.log(randomnum);
+// console.log(Math.log10(1000))
+// console.log(Math.log(1000))
+// console.log(Math.log2(1000))
+// console.log(Math.sin(90*Math.PI/180))
+// console.log(Math.cos(90*Math.PI/180))
+
+b=("I Love JavaScript")
+// console.log(b.toUpperCase())
+
+// console.log(b.slice(2,6))
+// let a="Nischal Panthi"
+// console.log(a.includes('z'))
+
+// console.log(b.replace("Love","hate"))
+// console.log(b.split(""))   // the output depends on what we give in between
+
+
+
+// console.log(b.concat(" too much"))  // Joins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
