@@ -337,7 +337,7 @@
 // console.log(Math.sin(90*Math.PI/180))
 // console.log(Math.cos(90*Math.PI/180))
 
-b=("I Love JavaScript")
+// b=("I Love JavaScript")
 // console.log(b.toUpperCase())
 
 // console.log(b.slice(2,6))
@@ -352,6 +352,47 @@ b=("I Love JavaScript")
 // console.log(b.concat(" too much"))  // Joins
 
 
+// Set Timeout and Set Interval
+
+
+// console.log("first")
+// setTimeout(()=>{
+//     console.log("set timeout output")
+// },1000)
+// console.log("last")
+// let count =0;
+// console.log("first")
+// let a = setInterval(()=>{
+//     console.log("set timeout output")
+//     count ++;
+//     if (count === 5){
+//     clearInterval(a)
+//     }
+// },1000)
+// console.log("last")
+
+
+
+
+
+
+
+
+// setInterval(()=>{
+//     date = new Date();
+//     document.getElementById("clock").innerText=(date.toLocaleTimeString());
+// }
+// ,1000)
+const loading = document.getElementById("loading");
+let dotCount = 0;
+
+const a = setInterval(() => {
+    loading.textContent = "Loading" + ".".repeat(dotCount);
+    dotCount++;
+    if (dotCount > 3) {
+        dotCount=1;
+    }
+}, 500); 
 
 
 
