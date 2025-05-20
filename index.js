@@ -419,5 +419,20 @@
 
 
 
+    const box = document.getElementById("box");
+    const button=document.getElementById("startButton") 
+    button.addEventListener("click",()=>{
+        let percentage=0;
+    
+    const interval = setInterval(() => {
+        box.style.width = `${percentage}%`; 
+        box.textContent = `${percentage}%`; 
 
+        if (percentage === 100) {
+            clearInterval(interval); 
+            box.textContent = "Done"; 
+        }
 
+        percentage++; 
+    }, 30); 
+});
