@@ -1,3 +1,4 @@
+
 // // 📘 JavaScript Learning Summary by Nischal
 
 // // ----------------------
@@ -383,18 +384,16 @@
 //     document.getElementById("clock").innerText=(date.toLocaleTimeString());
 // }
 // ,1000)
-const loading = document.getElementById("loading");
-let dotCount = 0;
+// const loading = document.getElementById("loading");
+// let dotCount = 0;
 
-const a = setInterval(() => {
-    loading.textContent = "Loading" + ".".repeat(dotCount);
-    dotCount++;
-    if (dotCount > 3) {
-        dotCount=1;
-    }
-}, 500); 
-
-
+// const a = setInterval(() => {
+//     loading.textContent = "Loading" + ".".repeat(dotCount);
+//     dotCount++;
+//     if (dotCount > 3) {
+//         dotCount=1;
+//     }
+// }, 500); 
 
 
 
@@ -405,6 +404,18 @@ const a = setInterval(() => {
 
 
 
+
+
+
+
+
+
+
+// setInterval(()=>{
+//     date = new Date();
+//     document.getElementById("clock").innerText=(date.toLocaleTimeString());
+// }
+// ,1000)
 
 
 

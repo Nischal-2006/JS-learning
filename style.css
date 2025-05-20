@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD
 
 body {
   margin: 0;
@@ -30,5 +31,34 @@ body {
     letter-spacing: 1.5px;
     user-select: none;
     transition: all 0.3s ease;
+=======
+body {
+    margin: 0;
+    padding: 0;
+   
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container
+  {
+    width: 500px;
+    background-color: #2c5364;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(5, 5, 5, 0.4);
   }
   
+  
+  
+  #clock {
+    font-size: 4rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;  }
+
+   */
