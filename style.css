@@ -1,4 +1,4 @@
-
+/* 
    body {
     margin: 0;
     padding: 0;
@@ -24,17 +24,17 @@
   }
   #box {
  width: 0;
-    height: 100px; /* Set a fixed height */
+    height: 100px; 
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background-color: #c3d7e0;
-    color: rgb(0, 0, 0); /* Text color */
-    font-size: 20px; /* Text size */
+    color: rgb(0, 0, 0); 
+    font-size: 20px; 
     font-weight: bold;
     border-radius: 30px solid black;
-    transition: width 0.03s linear; /* Smooth width transition */
+    transition: width 0.03s linear; 
 }
 .button {
   width: 200px;
@@ -56,4 +56,95 @@
   background-color: #00b3ff;
   color: black;
   transform: scale(1.05);
+} */
+
+
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+
+.login-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+input[type="text"],
+input[type="password"] ,
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #203a43;
+}
+input[type="file"] {
+  display: flex;
+  width: 70%;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  color: white;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+input[type="file"]:hover {
+  border-color: #2c5364;
+  background-color: #892121;
+} */

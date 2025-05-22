@@ -199,7 +199,7 @@
 // //     document.write("<br>");
 
 
-     
+
 // // }
 // // for (let i = 5; i >= 1; i--) {
 // //     for (let j = 1; j <= i; j++) {
@@ -419,20 +419,61 @@
 
 
 
-    const box = document.getElementById("box");
-    const button=document.getElementById("startButton") 
-    button.addEventListener("click",()=>{
-        let percentage=0;
-    
-    const interval = setInterval(() => {
-        box.style.width = `${percentage}%`; 
-        box.textContent = `${percentage}%`; 
+//     const box = document.getElementById("box");
+//     const button=document.getElementById("startButton") 
+//     button.addEventListener("click",()=>{
+//         let percentage=0;
 
-        if (percentage === 100) {
-            clearInterval(interval); 
-            box.textContent = "Done"; 
-        }
+//     const interval = setInterval(() => {
+//         box.style.width = `${percentage}%`; 
+//         box.textContent = `${percentage}%`; 
 
-        percentage++; 
-    }, 30); 
-});
+//         if (percentage === 100) {
+//             clearInterval(interval); 
+//             box.textContent = "Done"; 
+//         }
+
+//         percentage++; 
+//     }, 30); 
+// });
+
+
+// try{
+//     add();
+//     document.write("yo skip hunxa")
+
+// }
+// catch(error){
+//     {
+//         throw("function xainw")
+//     document.write("add function banauu <br>")
+// }
+// }
+// finally{
+//     document.write("yo chai hunxa")
+// }
+// const form = document.querySelector('form');
+// form.addEventListener('submit', (event) => {
+//     event.preventDefault();
+//     const name = document.getElementById("username").value;
+//     const email = document.getElementById("email").value;
+//     const file = document.getElementById("file").value;
+//     console.log(name);
+//     console.log(email);
+
+//     function validatePassword(password) {
+//         const re = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+//         return re.test(password);
+//     }
+
+//     if (name.length < 5) {
+//         alert("Name must be at least 5 characters long.");
+//     } else if (!validatePassword(password)) {
+//         alert("Invalid password format.");
+//     } else if (file.length < 1) {
+//         alert("Please upload a file.");
+//     } else {
+//         alert("Form submitted successfully!");
+//     }   
+
+// });
