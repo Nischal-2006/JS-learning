@@ -477,3 +477,60 @@
 //     }   
 
 // });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("username").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const fileInput = document.getElementById("file");
+        const file = fileInput.files[0];
+
+        try {
+            if (!name || !email || !password || !file) {
+
+                alert("All fields are required.");
+            }
+
+
+           
+               else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                throw new Error("Invalid email format.");
+            } else if (password.length < 8 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
+                throw new Error("Password must be at least 8 characters long and include at least one letter and one number.");
+            }
+            else if (file.type !== "image/png" && file.type !== "image/jpeg") {
+                throw new Error("File must be a PNG or JPEG image.");
+            }
+            else if (file.size > 1024 * 1024) {
+                throw new Error("File size must be less than 1MB.");
+            }
+else{
+  
+        document.write(`
+            Form Submitted Successfully!
+
+            Username: ${name}
+            Email:= ${email}
+            Password: ${"*".repeat(password.length)}
+            Uploaded File: ${file.name}
+        `);
+}
+        } catch (error) {
+            alert(error.message);
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const togglePassword = document.getElementById("togglePassword");
+    const passwordField = document.getElementById("password")
+    togglePassword.addEventListener("click", () => {
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+        togglePassword.textContent = type === "password" ? "👀" : "🙈";
+    });
+});
