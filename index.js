@@ -497,7 +497,7 @@
 //             }
 
 
-           
+
 //                else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 //                 throw new Error("Invalid email format.");
 //             } else if (password.length < 8 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
@@ -510,7 +510,7 @@
 //                 throw new Error("File size must be less than 1MB.");
 //             }
 // else{
-  
+
 //         document.write(`
 //             Form Submitted Successfully!
 
@@ -534,3 +534,20 @@
 //         togglePassword.textContent = type === "password" ? "👀" : "🙈";
 //     });
 // });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const div = document.getElementsByClassName("class")[0];
+    div.innerText = "<p>hello world</p>"
+    const id = document.getElementsByTagName("a")[0];
+    id.innerText = "I am Nischal"
+    id.setAttribute("href", "https://www.linkedin.com/in/nischal-panthi/?originalSubdomain=np",)
+    console.log(id.getAttribute("href"));
+    id.style.color = "white";
+    id.style.fontSize = "20px";
+    id.style.textDecoration = "none";qq
+    id.style.fontWeight = "bold";
+    id.style.backgroundColor = "black";
+    id.style.padding = "10px";
+    id.style.borderRadius = "5px";
+    id.style.display = "inline-block";
+});
