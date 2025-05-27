@@ -555,37 +555,91 @@
 //     id.style.borderRadius = "5px";
 //     id.style.display = "inline-block";
 // });
-const btn = document.getElementById("Btn")
-btn.addEventListener("dblclick", myfunction)
-function myfunction() {
-    alert("Button-Double clicked!");
-    btn.style.backgroundColor = "blue";
-    btn.style.color = "white";
+// const btn = document.getElementById("Btn")
+// btn.addEventListener("dblclick", myfunction)
+// function myfunction() {
+//     alert("Button-Double clicked!");
+//     btn.style.backgroundColor = "blue";
+//     btn.style.color = "white";
+// }
+// btn.addEventListener("mousedown", myfunction)
+// function myfunction() {
+//     alert("Button-Pressed!");
+//     btn.style.backgroundColor = "blue";
+//     btn.style.color = "white";
+// }
+// btn.addEventListener("mouseup", myfunction)
+//  function myfunction() {
+//     alert("Button-Pressed!");
+//      btn.style.backgroundColor = "blue";
+//      btn.style.color = "white";
+//  }
+// btn.addEventListener("mouseover", myfunction)
+// function myfunction() {
+//     alert("Button-Pressed!");
+//     btn.style.backgroundColor = "blue";
+//     btn.style.color = "white";
+// }
+// btn.addEventListener("mouseout", myfunction)
+// function myfunction() {
+//     alert("Button-Pressed!");
+//     btn.style.backgroundColor = "blue";
+//     btn.style.color = "white";
+// }
+// document.addEventListener("keypress",function(e){
+//     console.log(e.key);
+// })
+
+
+// Promises 
+// let myPromise= new Promise((resolve,reject)=>{
+//   return reject();  
+// }
+// )
+// myPromise.then(()=>{
+//     console.log("Success")
+// })
+// .catch(()=>{
+//     console.log("Error")
+// })
+
+// let apiCall = fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//     })
+//     .then(data => resolve(data)) 
+//     .catch(error => reject(Error))
+
+// Async Await
+
+// let prom=new Promise((resolve,reject)=>{
+//     return resolve()
+// })
+// async function handlePromise(){
+//     try{
+//         await prom;
+//         console.log("Promise resolved successfully");
+//     }
+//     catch(e){
+//         console.log("e");
+//     }
+// }
+// handlePromise();
+async function apiCall() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        if (!response.ok) {
+            throw new Error("Response Aayena")
+        }
+        const data = await response.json()
+        console.log(data)
+
+    }
+    catch (e) {
+        console.log(e)
+    }
 }
-btn.addEventListener("mousedown", myfunction)
-function myfunction() {
-    alert("Button-Pressed!");
-    btn.style.backgroundColor = "blue";
-    btn.style.color = "white";
-}
-btn.addEventListener("mouseup", myfunction)
- function myfunction() {
-    alert("Button-Pressed!");
-     btn.style.backgroundColor = "blue";
-     btn.style.color = "white";
- }
-btn.addEventListener("mouseover", myfunction)
-function myfunction() {
-    alert("Button-Pressed!");
-    btn.style.backgroundColor = "blue";
-    btn.style.color = "white";
-}
-btn.addEventListener("mouseout", myfunction)
-function myfunction() {
-    alert("Button-Pressed!");
-    btn.style.backgroundColor = "blue";
-    btn.style.color = "white";
-}
-document.addEventListener("keypress",function(e){
-    console.log(e.key);
-})
+apiCall();
