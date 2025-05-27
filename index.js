@@ -628,18 +628,31 @@
 //     }
 // }
 // handlePromise();
-async function apiCall() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-        if (!response.ok) {
-            throw new Error("Response Aayena")
-        }
-        const data = await response.json()
-        console.log(data)
+// async function apiCall() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//         if (!response.ok) {
+//             throw new Error("Response Aayena")
+//         }
+//         const data = await response.json()
+//         console.log(data)
 
-    }
-    catch (e) {
-        console.log(e)
-    }
+//     }
+//     catch (e) {
+//         console.log(e)
+//     }
+// }
+// apiCall();
+
+const images= document.getElementById("images")
+const button= document.getElementById("Btn")
+
+const URL="https://api.adviceslip.com/advice"
+const apiCall= async()=>{
+    let response= await fetch(URL)
+    const dogs= await response.json()
+    console.log(dogs.slip.advice);
+    images.innerHTML=dogs.slip.advice
+    
 }
-apiCall();
+button.addEventListener('click',apiCall)
