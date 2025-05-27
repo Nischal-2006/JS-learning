@@ -644,15 +644,26 @@
 // }
 // apiCall();
 
-const images= document.getElementById("images")
-const button= document.getElementById("Btn")
+const images = document.getElementById("images")
+const button = document.getElementById("Btn")
 
-const URL="https://api.adviceslip.com/advice"
-const apiCall= async()=>{
-    let response= await fetch(URL)
-    const dogs= await response.json()
-    console.log(dogs.slip.advice);
-    images.innerHTML=dogs.slip.advice
-    
+
+
+const URL = "https://api.adviceslip.com/advice"
+const apiCall = async () => {
+    try {
+        let response = await fetch(URL)
+        if (!response.ok) {
+            throw new Error("Response Aayena")
+        }
+        const dogs = await response.json()
+        console.log(dogs.slip.advice);
+        images.innerHTML = dogs.slip.advice
+
+    }
+    catch (e) {
+        console.log(e)
+    }
+
 }
-button.addEventListener('click',apiCall)
+button.addEventListener('click', apiCall)
