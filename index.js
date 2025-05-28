@@ -644,26 +644,49 @@
 // }
 // apiCall();
 
-const images = document.getElementById("images")
-const button = document.getElementById("Btn")
+// const images = document.getElementById("images")
+// const button = document.getElementById("Btn")
 
 
 
-const URL = "https://api.adviceslip.com/advice"
+// const URL = "https://api.adviceslip.com/advice"
+// const apiCall = async () => {
+//     try {
+//         let response = await fetch(URL)
+//         if (!response.ok) {
+//             throw new Error("Response Aayena")
+//         }
+//         const dogs = await response.json()
+//         console.log(dogs.slip.advice);
+//         images.innerHTML = dogs.slip.advice
+
+//     }
+//     catch (e) {
+//         console.log(e)
+//     }
+
+// }
+// button.addEventListener('click', apiCall)
+const URL = "https://fakestoreapi.com/products"
+
 const apiCall = async () => {
     try {
-        let response = await fetch(URL)
+        let response = await fetch(URL);
         if (!response.ok) {
-            throw new Error("Response Aayena")
+            throw new Error("Response Aayena");
         }
-        const dogs = await response.json()
-        console.log(dogs.slip.advice);
-        images.innerHTML = dogs.slip.advice
-
+        const products = await response.json(); // Single product object
+        const cardContainer = document.getElementById("demo")
+       products.forEach(product => {
+        const card =createCard(product);
+        cardContainer.appendChild(card);
+        
+        
+       });
     }
     catch (e) {
         console.log(e)
-    }
 
+    }
 }
-button.addEventListener('click', apiCall)
+apiCall();

@@ -60,7 +60,7 @@
 
 
 
- body {
+ /* body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -70,7 +70,7 @@
   align-items: center;
   height: 100vh;
 }
-
+ */
 
 /* .login-container {
   background-color: #ffffff;
@@ -195,7 +195,7 @@ input[type="file"]:hover {
 
   
 /* Style for the #images div */
-#images {
+/* #images {
   width: 300px;
   height: 200px;
   background-color: lightgray;
@@ -232,4 +232,5 @@ input[type="file"]:hover {
 #Btn:hover {
   background-color: gray;
   transform: scale(1.1);
-}
+} */
+/* Card container styling */
